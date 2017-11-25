@@ -26,8 +26,12 @@ const styleArea = {
 class App extends React.Component {
   constructor(props) {
     super(props);
+    const text = [
+      'Con chó tru',
+      'Trục trặc'
+    ]
     this.state = {
-      value: 'Con chó tru'
+      value: text[Math.floor(Math.random() * text.length)]
     };
 
     this.handleChange = this.handleChange.bind(this);
